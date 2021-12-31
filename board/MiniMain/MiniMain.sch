@@ -305,17 +305,6 @@ Wire Wire Line
 	2750 7000 2900 7000
 Text Notes 3750 7400 2    50   ~ 0
 NEOPIXEL
-$Comp
-L power:+3.3V #PWR?
-U 1 1 61B503E5
-P 1450 6800
-F 0 "#PWR?" H 1450 6650 50  0001 C CNN
-F 1 "+3.3V" H 1465 6973 50  0000 C CNN
-F 2 "" H 1450 6800 50  0001 C CNN
-F 3 "" H 1450 6800 50  0001 C CNN
-	1    1450 6800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1450 6800 1450 7200
 $Comp
@@ -973,28 +962,6 @@ $EndComp
 Wire Wire Line
 	2500 5550 2500 5450
 $Comp
-L Transistor_FET:AO3401A Q?
-U 1 1 61E3DB4A
-P 1250 4750
-F 0 "Q?" H 1454 4796 50  0000 L CNN
-F 1 "DMP2045U" H 1454 4705 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 1450 4675 50  0001 L CIN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 1250 4750 50  0001 L CNN
-	1    1250 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR?
-U 1 1 61E46FFA
-P 1350 4450
-F 0 "#PWR?" H 1350 4300 50  0001 C CNN
-F 1 "+BATT" H 1365 4623 50  0000 C CNN
-F 2 "" H 1350 4450 50  0001 C CNN
-F 3 "" H 1350 4450 50  0001 C CNN
-	1    1350 4450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VBUS #PWR?
 U 1 1 61E47E41
 P 600 4450
@@ -1072,29 +1039,13 @@ Wire Wire Line
 	700  5050 600  5050
 Wire Wire Line
 	600  5050 600  5150
-Wire Wire Line
-	600  4450 600  4750
 Connection ~ 600  5050
-Wire Wire Line
-	1050 4750 600  4750
-Connection ~ 600  4750
-Wire Wire Line
-	600  4750 600  5050
 Wire Wire Line
 	1000 5050 1200 5050
 Connection ~ 1700 5050
 Wire Wire Line
 	1200 5100 1200 5050
 Connection ~ 1200 5050
-Wire Wire Line
-	1200 5050 1350 5050
-Wire Wire Line
-	1350 4950 1350 5050
-Connection ~ 1350 5050
-Wire Wire Line
-	1350 5050 1700 5050
-Wire Wire Line
-	1350 4550 1350 4450
 $Comp
 L Device:C C?
 U 1 1 61EAFA48
@@ -1196,269 +1147,6 @@ Wire Wire Line
 	3500 5050 3050 5050
 Text Notes 2050 4550 0    50   ~ 0
 Power and Filtering
-$Comp
-L Battery_Management:LC709203FQH-01TWG U?
-U 1 1 61F4B02C
-P 3450 3400
-F 0 "U?" H 3350 4100 50  0000 C CNN
-F 1 "LC709203FQH-01TWG" H 3000 4000 50  0000 C CNN
-F 2 "Package_DFN_QFN:WDFN-8-1EP_4x3mm_P0.65mm_EP2.4x1.8mm" H 3450 2850 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/LC709203F-D.PDF" H 3400 3300 50  0001 C CNN
-	1    3450 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR?
-U 1 1 61F4DE3F
-P 3450 2750
-F 0 "#PWR?" H 3450 2600 50  0001 C CNN
-F 1 "+BATT" H 3465 2923 50  0000 C CNN
-F 2 "" H 3450 2750 50  0001 C CNN
-F 3 "" H 3450 2750 50  0001 C CNN
-	1    3450 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 2750 3450 2900
-$Comp
-L power:GND #PWR?
-U 1 1 61F562D2
-P 3450 4000
-F 0 "#PWR?" H 3450 3750 50  0001 C CNN
-F 1 "GND" H 3455 3827 50  0000 C CNN
-F 2 "" H 3450 4000 50  0001 C CNN
-F 3 "" H 3450 4000 50  0001 C CNN
-	1    3450 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 4000 3450 3900
-$Comp
-L power:GND #PWR?
-U 1 1 61F5E881
-P 3000 3750
-F 0 "#PWR?" H 3000 3500 50  0001 C CNN
-F 1 "GND" H 3005 3577 50  0000 C CNN
-F 2 "" H 3000 3750 50  0001 C CNN
-F 3 "" H 3000 3750 50  0001 C CNN
-	1    3000 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 3750 3000 3600
-Wire Wire Line
-	3000 3600 3050 3600
-Text Label 2950 3400 2    50   ~ 0
-SCL
-Text Label 2950 3300 2    50   ~ 0
-SDA
-Wire Wire Line
-	2950 3400 3050 3400
-Wire Wire Line
-	2950 3300 3050 3300
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 61F79B24
-P 3200 1900
-F 0 "J?" H 3118 1575 50  0000 C CNN
-F 1 "JSTPH" H 3118 1666 50  0000 C CNN
-F 2 "" H 3200 1900 50  0001 C CNN
-F 3 "~" H 3200 1900 50  0001 C CNN
-	1    3200 1900
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+BATT #PWR?
-U 1 1 61F8B1C2
-P 3500 1700
-F 0 "#PWR?" H 3500 1550 50  0001 C CNN
-F 1 "+BATT" H 3515 1873 50  0000 C CNN
-F 2 "" H 3500 1700 50  0001 C CNN
-F 3 "" H 3500 1700 50  0001 C CNN
-	1    3500 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61F8B475
-P 3500 2000
-F 0 "#PWR?" H 3500 1750 50  0001 C CNN
-F 1 "GND" H 3505 1827 50  0000 C CNN
-F 2 "" H 3500 2000 50  0001 C CNN
-F 3 "" H 3500 2000 50  0001 C CNN
-	1    3500 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 61F8C1F5
-P 3600 1950
-F 0 "TP?" V 3554 2138 50  0000 L CNN
-F 1 "JSTPH" V 3645 2138 50  0000 L CNN
-F 2 "" H 3800 1950 50  0001 C CNN
-F 3 "~" H 3800 1950 50  0001 C CNN
-	1    3600 1950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3400 1800 3500 1800
-Wire Wire Line
-	3500 1800 3500 1700
-Wire Wire Line
-	3400 1900 3500 1900
-Wire Wire Line
-	3500 1900 3500 1950
-Wire Wire Line
-	3600 1950 3500 1950
-Connection ~ 3500 1950
-Wire Wire Line
-	3500 1950 3500 2000
-$Comp
-L Battery_Management:MCP73831-2-OT U?
-U 1 1 61FA8D9A
-P 7900 1500
-F 0 "U?" H 7750 2000 50  0000 C CNN
-F 1 "MCP73831-2-OT" H 7500 1900 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7950 1250 50  0001 L CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 7750 1450 50  0001 C CNN
-	1    7900 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VBUS #PWR?
-U 1 1 61FAA939
-P 7900 1050
-F 0 "#PWR?" H 7900 900 50  0001 C CNN
-F 1 "VBUS" H 7915 1223 50  0000 C CNN
-F 2 "" H 7900 1050 50  0001 C CNN
-F 3 "" H 7900 1050 50  0001 C CNN
-	1    7900 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7900 1050 7900 1200
-$Comp
-L power:GND #PWR?
-U 1 1 61FB454B
-P 7900 2050
-F 0 "#PWR?" H 7900 1800 50  0001 C CNN
-F 1 "GND" H 7905 1877 50  0000 C CNN
-F 2 "" H 7900 2050 50  0001 C CNN
-F 3 "" H 7900 2050 50  0001 C CNN
-	1    7900 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7900 2050 7900 2000
-$Comp
-L Device:R R?
-U 1 1 61FBDE40
-P 7350 1800
-F 0 "R?" H 7280 1754 50  0000 R CNN
-F 1 "5.1K" H 7280 1845 50  0000 R CNN
-F 2 "" V 7280 1800 50  0001 C CNN
-F 3 "~" H 7350 1800 50  0001 C CNN
-	1    7350 1800
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7350 1950 7350 2000
-Wire Wire Line
-	7350 2000 7900 2000
-Connection ~ 7900 2000
-Wire Wire Line
-	7900 2000 7900 1800
-Wire Wire Line
-	7350 1650 7350 1600
-Wire Wire Line
-	7350 1600 7500 1600
-$Comp
-L Device:C C?
-U 1 1 61FEE7E1
-P 8800 1550
-F 0 "C?" H 8915 1596 50  0000 L CNN
-F 1 "10uF" H 8915 1505 50  0000 L CNN
-F 2 "" H 8838 1400 50  0001 C CNN
-F 3 "~" H 8800 1550 50  0001 C CNN
-	1    8800 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR?
-U 1 1 61FF08D9
-P 8950 1250
-F 0 "#PWR?" H 8950 1100 50  0001 C CNN
-F 1 "+BATT" H 8965 1423 50  0000 C CNN
-F 2 "" H 8950 1250 50  0001 C CNN
-F 3 "" H 8950 1250 50  0001 C CNN
-	1    8950 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8950 1250 8950 1400
-Wire Wire Line
-	8950 1400 8800 1400
-Wire Wire Line
-	8800 1400 8300 1400
-Connection ~ 8800 1400
-$Comp
-L power:GND #PWR?
-U 1 1 62004233
-P 8800 1800
-F 0 "#PWR?" H 8800 1550 50  0001 C CNN
-F 1 "GND" H 8805 1627 50  0000 C CNN
-F 2 "" H 8800 1800 50  0001 C CNN
-F 3 "" H 8800 1800 50  0001 C CNN
-	1    8800 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8800 1800 8800 1700
-$Comp
-L Device:LED D?
-U 1 1 6200E4A3
-P 9100 2150
-F 0 "D?" V 9139 2032 50  0000 R CNN
-F 1 "ORANGE" V 9048 2032 50  0000 R CNN
-F 2 "" H 9100 2150 50  0001 C CNN
-F 3 "~" H 9100 2150 50  0001 C CNN
-	1    9100 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 6201102E
-P 8400 2000
-F 0 "R?" H 8330 1954 50  0000 R CNN
-F 1 "5.1K" H 8330 2045 50  0000 R CNN
-F 2 "" V 8330 2000 50  0001 C CNN
-F 3 "~" H 8400 2000 50  0001 C CNN
-	1    8400 2000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8300 1600 8400 1600
-Wire Wire Line
-	8400 1600 8400 1850
-Wire Wire Line
-	8400 2150 8950 2150
-$Comp
-L power:VBUS #PWR?
-U 1 1 6202695A
-P 9400 1850
-F 0 "#PWR?" H 9400 1700 50  0001 C CNN
-F 1 "VBUS" H 9415 2023 50  0000 C CNN
-F 2 "" H 9400 1850 50  0001 C CNN
-F 3 "" H 9400 1850 50  0001 C CNN
-	1    9400 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9400 1850 9400 2150
-Wire Wire Line
-	9400 2150 9250 2150
-Text Notes 8150 1050 0    50   ~ 0
-LIPO Charging
 Text Notes 2100 4750 0    50   ~ 0
 ALT: RT9080-33GJ5
 $Comp
@@ -1506,4 +1194,217 @@ Text Notes 850  600  0    50   ~ 0
 12402012E212A
 Text Notes 850  700  0    50   ~ 0
 ALT: USB4105-GF-A-120
+Wire Wire Line
+	600  4450 600  5050
+Wire Wire Line
+	1200 5050 1700 5050
+$Comp
+L power:GND #PWR?
+U 1 1 621B83F0
+P 9250 3050
+F 0 "#PWR?" H 9250 2800 50  0001 C CNN
+F 1 "GND" H 9255 2877 50  0000 C CNN
+F 2 "" H 9250 3050 50  0001 C CNN
+F 3 "" H 9250 3050 50  0001 C CNN
+	1    9250 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 3000 9250 3000
+Wire Wire Line
+	9250 3000 9250 3050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 621C0D6F
+P 10400 2850
+F 0 "#PWR?" H 10400 2700 50  0001 C CNN
+F 1 "+3.3V" H 10415 3023 50  0000 C CNN
+F 2 "" H 10400 2850 50  0001 C CNN
+F 3 "" H 10400 2850 50  0001 C CNN
+	1    10400 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 3100 10400 3100
+Wire Wire Line
+	10400 3100 10400 2850
+Text Label 5700 3800 2    50   ~ 0
+xD1
+Text Label 5700 3900 2    50   ~ 0
+xD2
+Text Label 5700 4400 2    50   ~ 0
+I2C_PWR
+Text Label 7200 3600 0    50   ~ 0
+xD46
+Text Label 7200 3700 0    50   ~ 0
+xD45
+Text Label 7200 3800 0    50   ~ 0
+xRXD0
+Text Label 7200 4000 0    50   ~ 0
+xD42
+Text Label 7200 4100 0    50   ~ 0
+xD41
+Text Label 7200 4200 0    50   ~ 0
+xD40
+Text Label 7200 5000 0    50   ~ 0
+xD26
+Text Label 9700 3200 2    50   ~ 0
+xD1
+Text Label 9700 3300 2    50   ~ 0
+xD2
+Text Label 9700 3400 2    50   ~ 0
+xD26
+Text Label 9700 3500 2    50   ~ 0
+xD40
+Text Label 9700 3600 2    50   ~ 0
+xD41
+Text Label 9700 3700 2    50   ~ 0
+xD42
+Text Label 9700 3800 2    50   ~ 0
+xRXD0
+Text Label 9700 3900 2    50   ~ 0
+xD45
+Text Label 9700 4000 2    50   ~ 0
+xD46
+Wire Wire Line
+	5700 3800 5850 3800
+Wire Wire Line
+	5700 3900 5850 3900
+Wire Wire Line
+	5700 4400 5850 4400
+Wire Wire Line
+	7200 3600 7050 3600
+Wire Wire Line
+	7200 3700 7050 3700
+Wire Wire Line
+	7200 3800 7050 3800
+Wire Wire Line
+	7200 4000 7050 4000
+Wire Wire Line
+	7200 4100 7050 4100
+Wire Wire Line
+	7200 4200 7050 4200
+Wire Wire Line
+	7200 5000 7050 5000
+$Comp
+L Connector_Generic:Conn_01x11 J?
+U 1 1 6223B5CD
+P 10050 3500
+F 0 "J?" H 10130 3542 50  0000 L CNN
+F 1 "Conn_01x11" H 10130 3451 50  0000 L CNN
+F 2 "" H 10050 3500 50  0001 C CNN
+F 3 "~" H 10050 3500 50  0001 C CNN
+	1    10050 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 3200 9850 3200
+Wire Wire Line
+	9700 3300 9850 3300
+Wire Wire Line
+	9700 3400 9850 3400
+Wire Wire Line
+	9700 3500 9850 3500
+Wire Wire Line
+	9700 3600 9850 3600
+Wire Wire Line
+	9700 3700 9850 3700
+Wire Wire Line
+	9700 3800 9850 3800
+Wire Wire Line
+	9700 3900 9850 3900
+Wire Wire Line
+	9700 4000 9850 4000
+Text Label 1450 6800 1    50   ~ 0
+VDEVICE
+$Comp
+L Device:R R?
+U 1 1 6229D27E
+P 5650 6500
+F 0 "R?" H 5720 6546 50  0000 L CNN
+F 1 "100k" H 5720 6455 50  0000 L CNN
+F 2 "" V 5580 6500 50  0001 C CNN
+F 3 "~" H 5650 6500 50  0001 C CNN
+	1    5650 6500
+	1    0    0    -1  
+$EndComp
+Text Label 5850 6800 0    50   ~ 0
+I2C_PWR
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6229EC99
+P 5650 6200
+F 0 "#PWR?" H 5650 6050 50  0001 C CNN
+F 1 "+3.3V" H 5665 6373 50  0000 C CNN
+F 2 "" H 5650 6200 50  0001 C CNN
+F 3 "" H 5650 6200 50  0001 C CNN
+	1    5650 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6229FC65
+P 5300 6200
+F 0 "#PWR?" H 5300 6050 50  0001 C CNN
+F 1 "+3.3V" H 5315 6373 50  0000 C CNN
+F 2 "" H 5300 6200 50  0001 C CNN
+F 3 "" H 5300 6200 50  0001 C CNN
+	1    5300 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:AO3401A Q?
+U 1 1 622A16D5
+P 5400 6800
+F 0 "Q?" H 5605 6754 50  0000 L CNN
+F 1 "AO3401A" H 5605 6845 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5600 6725 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 5400 6800 50  0001 L CNN
+	1    5400 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 622A536C
+P 5300 7250
+F 0 "C?" H 5415 7296 50  0000 L CNN
+F 1 "1uF" H 5415 7205 50  0000 L CNN
+F 2 "" H 5338 7100 50  0001 C CNN
+F 3 "~" H 5300 7250 50  0001 C CNN
+	1    5300 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 622B67FA
+P 5300 7500
+F 0 "#PWR?" H 5300 7250 50  0001 C CNN
+F 1 "GND" H 5305 7327 50  0000 C CNN
+F 2 "" H 5300 7500 50  0001 C CNN
+F 3 "" H 5300 7500 50  0001 C CNN
+	1    5300 7500
+	1    0    0    -1  
+$EndComp
+Text Label 5200 7050 2    50   ~ 0
+VDEVICE
+Wire Wire Line
+	5300 6600 5300 6200
+Wire Wire Line
+	5600 6800 5650 6800
+Wire Wire Line
+	5650 6650 5650 6800
+Connection ~ 5650 6800
+Wire Wire Line
+	5650 6800 5850 6800
+Wire Wire Line
+	5650 6350 5650 6200
+Wire Wire Line
+	5300 7100 5300 7050
+Wire Wire Line
+	5200 7050 5300 7050
+Connection ~ 5300 7050
+Wire Wire Line
+	5300 7050 5300 7000
+Wire Wire Line
+	5300 7400 5300 7500
 $EndSCHEMATC
