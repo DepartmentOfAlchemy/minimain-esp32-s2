@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "doa-footprint-library")(type "KiCad")(uri "/Users/peteje/other/dev/departmentOfAlchemy/doa-kicad-library/6-footprint-library/doa-footprint-library.pretty")(options "")(descr ""))
+  (lib (name "doa-logo")(type "KiCad")(uri "${KIPRJMOD}/MiniMainImage.pretty")(options "")(descr ""))
+)
