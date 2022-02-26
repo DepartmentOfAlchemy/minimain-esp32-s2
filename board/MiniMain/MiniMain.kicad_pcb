@@ -1503,7 +1503,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ffb3834b-7011-4114-b139-4c6299793c75)
     )
-    (fp_text value "AP7365-33WG-7" (at -11.09788 -1.260336 180) (layer "F.Fab")
+    (fp_text value "AP7365-33WG-7" (at -11.09788 -1.006336 180) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp cdec7a57-9360-45ae-8c3e-a5d9c24dfcad)
     )
