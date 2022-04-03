@@ -1,7 +1,7 @@
 {
   "board": {
-    "active_layer": 49,
-    "active_layer_preset": "",
+    "active_layer": 34,
+    "active_layer_preset": "All Layers",
     "auto_track_width": true,
     "hidden_nets": [],
     "high_contrast_mode": 0,
@@ -62,11 +62,11 @@
       35,
       36
     ],
-    "visible_layers": "bfe3faa_7ffffffe",
+    "visible_layers": "fffffff_ffffffff",
     "zone_display_mode": 1
   },
   "meta": {
-    "filename": "MiniMain.kicad_prl",
+    "filename": "MiniMain-esp32-s2.kicad_prl",
     "version": 3
   },
   "project": {

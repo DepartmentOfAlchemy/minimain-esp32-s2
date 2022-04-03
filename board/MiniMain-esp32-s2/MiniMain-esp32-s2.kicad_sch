@@ -6,6 +6,7 @@
 
   (title_block
     (title "MiniMain ESP32-S2")
+    (rev "0.1")
     (company "Department Of Alchemy")
     (comment 1 "Designer: Jesse Peterson")
     (comment 2 "Based On: Adafruit ESP32-S2 Feather")
