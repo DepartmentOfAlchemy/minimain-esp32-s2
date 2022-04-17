@@ -84,7 +84,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "MiniMain-gerbers/")
+      (outputdirectory "MiniMain-esp32-s2-gerbers/Rev2/")
     )
   )
 
